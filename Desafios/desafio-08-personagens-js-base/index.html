@@ -46,15 +46,39 @@
 
         // 1.   Liste somente os personagens cuja editora seja Marvel;
         //
+            console.log("Liste somente os personagens cuja editora seja Marvel");
+     h
+            let personagemMarvel = personagens.filter( (personagem) => personagem.editora == "Marvel")
+
+            console.log(personagemMarvel);
+
 
         // 2.	Liste somente os personagem cuja data de Aparição seja superior a 1950;
         //
+            console.log("Liste somente os personagem cuja data de Aparição seja superior a 1950");
+
+            const personagemdataAparicao = personagens.filter( (personagem) => personagem.dataAparicao > "1950");
+
+            console.log(personagemdataAparicao)
+
+
 
         // 3.	Some a idade de todos os personagens;
         //
+             console.log("Some a idade de todos os personagens");
+
         
         // 4.	Traga somente os nomes dos personagens;
         //
+             console.log("Traga somente os nomes dos personagens");
+
+
+             const nomePersonagem = personagens.filter( (personagem) => personagem.nome);
+
+             console.log(nomePersonagem);
+
+
+
 
         // 5.	Adicione mais um personagem chamado Capitã Marvel, data de Aparição 1977 e editora Marvel;
         //
