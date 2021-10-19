@@ -64,18 +64,61 @@
 
         // 1.	Lista somente os times cujas vitórias seja maior ou igual que 20
         //
+        console.log("Lista somente os times cujas vitórias seja maior ou igual que 20");
+        
+        const maiorQue20 = times.filter((time) => time.vitorias >= 20);
+
+        console.log(maiorQue20);
 
         // 2.	Traga somente os nomes dos times;
         //
+        console.log("Traga somente os nomes dos times");
+        
+        const apenasNomes = times.map(t => {
+            const novaLista = {};
+
+            novaLista.nome = t.nome;
+
+            return novaLista;
+        });
+        console.log(apenasNomes);
+
+
 
         // 3.	Adicione mais um time chamado Wolves, vitorias 12, empates 8, derrotas 10, gols proprios 38, golscontras 36;
         //
+        console.log("Adicione mais um time chamado Wolves, vitorias 12, empates 8, derrotas 10, gols proprios 38, golscontras 36")
+        
+        let Wolves = {
+            nome: 'Wolves',
+            vitorias: 12,
+            empates: 8,
+            derrotas:10,
+            golsproprio:38,
+            golscontra:36
+        };
+
+        times.push(Wolves);
+        console.log(times);
 
         // 4. Mostre o nome e a quantidade de jogos(vitorias, empates e derrotas), quantidade de vitorias, empates e derrotas de um time
         //
 
+        
         // 5.	Informe a quantidade de jogos do campeonato;
         //
+
+         console.log("Informe a quantidade de jogos do campeonato");
+        
+        
+        const jogosTimes = times.map(t => {
+            const novaLista = {};
+            novaLista.quantidadeJogos = t.vitorias + t.empates + t.derrotas;
+            return novaLista;
+        })
+
+        const JogosCampeonato = jogosTimes.reduce((total, atual) => total + atual.quantidadeJogos,0);
+        console.log(`Foram realizados ${JogosCampeonato} jogos`);
     </script>
 
 </body>
