@@ -7,6 +7,24 @@
   pointer-events: none;
 }
 
+.botaoPausa{
+  color: white;
+  height: 25px;
+  font-weight: 600;
+  margin: 0 10px;
+  background-color: tomato;
+  border-radius: 12%;
+}
+
+.botaoRetoma{
+  color: white;
+  height: 25px;
+  font-weight: 600;
+  margin: 0 10px;
+  background-color:yellowgreen;
+  border-radius: 12%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
